@@ -28,7 +28,7 @@
 		// 4 --> 64
 
 		function Rubiks (cube){
-			return ("the cube of " + cube + " = " +(cube * cube * cube))
+			return ("the cube of " + cube + " = " + (cube * cube * cube))
 		}
 
 		console.log(Rubiks(8))
@@ -37,12 +37,14 @@
 		// define a function that takes in a string and reverses it. you are not allowed to
 		// call the "reverse" function (or any other string functions)
 
+		var theReversedWord = ""		
 		function writtenInReverse (string){
-			for (i = string.length; i > 0; i --){
-				console.log ("wow")
+			for (i = string.length; i >= 0; i --){
+				theReversedWord += string[i]
 			}
+			console.log (theReversedWord)
 		}
-		writtenInReverse ("Wowie")
+		writtenInReverse ("AWESOME")
 
 
 </script>
