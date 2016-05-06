@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Review by G. van Til</title>
+	<script type="text/javascript">
+		// write a function that takes in three parameters and returns the sum of those three parameters
+		function plusser (number1, number2, number3){
+			console.log ("The sum of three parameters is " + (number1 + number2 + number3))
+		}
+
+		plusser(10,12,16)
+
+		// given a string, create a function that returns the last character in that string.
+		// examples:
+		// "cattywampus" --> s
+		function lastLetter (string){
+			for (letter = 0; letter < string.length; letter ++){
+				if (letter == string.length-1){
+					console.log (string[letter])
+				}
+			}
+		}
+		lastLetter("Radiohead")
+
+		// write a function that takes in one parameter and returns the cube of that parameter
+		// examples:
+		// 3 --> 27
+		// 4 --> 64
+
+		function Rubiks (cube){
+			return ("the cube of " + cube + " = " +(cube * cube * cube))
+		}
+
+		console.log(Rubiks(8))
+
+
+		// define a function that takes in a string and reverses it. you are not allowed to
+		// call the "reverse" function (or any other string functions)
+
+		function writtenInReverse (string){
+			for (i = string.length; i > 0; i --){
+				console.log ("wow")
+			}
+		}
+		writtenInReverse ("Wowie")
+
+
+</script>
+</head>
+<body>
+	<h1>How did this Javascript thing work again?</h1>
+</body>
+</html>
