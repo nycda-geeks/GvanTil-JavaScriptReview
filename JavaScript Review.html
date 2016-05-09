@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		// write a function that takes in three parameters and returns the sum of those three parameters
 		function plusser (number1, number2, number3){
-			console.log ("The sum of three parameters is " + (number1 + number2 + number3))
+			console.log ("The sum of the three parameters is " + (number1 + number2 + number3))
 		}
 
 		plusser(10,12,16)
@@ -54,18 +54,20 @@
 		// ["exciting", "exotic"], ["markets", "britain"] --> { exciting: "markets", exotic: "britain" }
 		// ["a", "b", "c"], ["x", "y", "z"] --> { a: "x", b: "y", c: "z" }
 
+		newObject = {
 
-		var emptyObject = {}
-		// a function that merges two arrays of the same length into an object
-		function arrayMerger (array1, array2){
-			for (i = 0; i <array1.length ; i ++ ){
-				console.log("Waddup")
-			}
 		}
 
-		arrayMerger (["Hello", "Penny", "Hey"], ["Goodbye", "Lane", "Jude"])
+		function arrayMerger (keys, values){
+			 for (var i = 0; i < values.length; i++) {
+      				 for (var j = 0; j < keys.length; j++) {
+       			    newObject[keys[j]] = values[j];
+      			 }
+      		}
+      		return newObject
+      	}
 
-
+	console.log (arrayMerger(["Hello", "Penny", "Hey"], ["Goodbye", "Lane", "Jude"]))
 
 
 </script>
